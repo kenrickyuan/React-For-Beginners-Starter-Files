@@ -5,7 +5,6 @@ class StorePicker extends React.Component {
     return (
       <>
     { /* test comment */}
-        <p>hello</p>
         <form className="store-selector">
           <h2>This is a H2</h2>
           <input type="text" required placeholder="Store Name"/>

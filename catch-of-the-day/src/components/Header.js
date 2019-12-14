@@ -17,6 +17,8 @@ const Header = (props) => (
   </header>
 );
 
+export default Header;
+
 // Old Stateless Functional Component before refactoring
 
 // function Header(props) {
@@ -36,7 +38,7 @@ const Header = (props) => (
 // }
 
 
-// No need to create an actual React Component for something that just takes data and renders JSX
+// No need to create an actual React Component for something that just retrieves data froms props and renders JSX
 
 // class Header extends React.Component {
 //   render() {
@@ -55,5 +57,3 @@ const Header = (props) => (
 //       );
 //   }
 // }
-
-export default Header;
