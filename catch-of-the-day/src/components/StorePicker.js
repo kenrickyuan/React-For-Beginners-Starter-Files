@@ -1,10 +1,9 @@
 import React from 'react';
 
 class StorePicker extends React.Component {
-
   myInput = React.createRef();
 
-  goToStore = (event) => {
+  goToStore = event => {
     // Stop form from submitting
     event.preventDefault();
 
@@ -13,21 +12,22 @@ class StorePicker extends React.Component {
 
     // Change page to /store/textinput
     this.props.history.push(`/store/${storeName}`);
-  }
+  };
 
   render() {
     return (
       <form className="store-selector" onSubmit={this.goToStore}>
         <h2>Enter a store</h2>
         <input
-        type="text"
-        ref={this.myInput}
-        required placeholder="Store Name"
-        defaultValue ="Fish N Chips"
+          type="text"
+          ref={this.myInput}
+          required
+          placeholder="Store Name"
+          defaultValue="Fish N Chips"
         />
         <button type="submit">Visit Store -></button>
       </form>
-      );
+    );
   }
 }
 
